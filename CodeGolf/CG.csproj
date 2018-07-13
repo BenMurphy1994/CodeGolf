@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{507D78E0-4E4E-45E3-9434-0F823E5274E7}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>CodeGolf</RootNamespace>
-    <AssemblyName>CodeGolf</AssemblyName>
+    <RootNamespace>CG</RootNamespace>
+    <AssemblyName>CG</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
