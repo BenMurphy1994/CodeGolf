@@ -1,0 +1,266 @@
+using System;
+using System.Linq;
+namespace CG
+{
+    class Program
+    {
+        static void Main(string[] a)
+        {
+            Console.WriteLine(mC = a[0].Count() % 2 == 0 ? a[0].Substring(Convert.ToInt32(a[0].Count() / 2f) - 1, 2) : a[0].Substring(Convert.ToInt32(Math.Floor(a[0].Count() / 2f)), 1));
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CodeGolf
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var i = args[0];
+            int l = i.Count();
+
+            float mP = l / 2f;
+
+            var mC = l % 2 == 0 ? i.Substring(Convert.ToInt32(mP) - 1, 2) : i.Substring(Convert.ToInt32(Math.Floor(mP)), 1);
+
+            Console.WriteLine(mC);
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CodeGolf
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var i = args[0];
+            int l = i.Count();
+
+            float mP = l / 2f;
+
+            var mC = i.Substring(Convert.ToInt32(Math.Floor(mP)), 1);
+
+            if (l % 2 == 0)
+                mC = i.Substring(Convert.ToInt32(mP)-1, 2);
+
+            mC = l % 2 == 0 ? mC = i.Substring(Convert.ToInt32(mP) - 1, 2) : i.Substring(Convert.ToInt32(Math.Floor(mP)), 1);
+
+            Console.WriteLine(mC);
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CodeGolf
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var i = args[0];
+            int l = i.Count();
+
+            //float for .5s
+            float mP = l / 2f;
+
+            var mC = i.Substring(Convert.ToInt32(Math.Floor(mP)), 1);
+
+            if (l % 2 == 0)
+            {
+                mC = i.Substring(Convert.ToInt32(mP)-1, 2);
+            }
+
+            Console.WriteLine(mC);
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CodeGolf
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string input = args[0];
+
+            int length = input.Count();
+
+            //float for .5s
+            float midPoint = length / 2f;
+
+            string middleChars = "";
+
+            if (length % 2 == 0)
+            {
+                middleChars = input.Substring(Convert.ToInt32(midPoint)-1, 2);
+            }
+            else
+            {
+                middleChars = input.Substring(Convert.ToInt32(Math.Floor(midPoint)), 1);
+            }
+
+            Console.WriteLine(middleChars);
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+

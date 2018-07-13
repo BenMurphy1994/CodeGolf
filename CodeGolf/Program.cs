@@ -1,18 +1,1 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CodeGolf
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            int num;
-            bool test = int.TryParse(args[0], out num);
-            Console.WriteLine(test);
-        }
-    }
-}
+﻿using System;using System.Linq;namespace CG{class Program{static void Main(string[]a){Console.WriteLine(a[0].Count()%2==0?a[0].Substring(Convert.ToInt32(a[0].Count()/2f)-1,2):a[0].Substring(Convert.ToInt32(Math.Floor(a[0].Count()/2f)),1));}}}
