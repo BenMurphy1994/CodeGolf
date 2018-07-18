@@ -10,23 +10,33 @@ namespace CG
     {
         public void Prog(string[] args)
         {
-            string input = args[0];
+            string i = args[0];
 
-            int length = input.Count();
+            int length = i.Count();
 
             //float for .5s
             float midPoint = args[0].Count() / 2f;
+
+            int mp = Convert.ToInt32(midPoint);
 
             string middleChars = "";
 
             if (length % 2 == 0)
             {
-                middleChars = input.Substring(Convert.ToInt32(midPoint) - 1, 2);
+                middleChars = i.Substring(Convert.ToInt32(midPoint) - 1, 2);
             }
             else
             {
-                middleChars = input.Substring(Convert.ToInt32(Math.Floor(midPoint)), 1);
+                middleChars = i.Substring(Convert.ToInt32(Math.Floor(midPoint)), 1);
             }
+
+            //char[] middleChars1 = length % 2 == 0 ? input[Convert.ToInt32(midPoint)] - 1 : input[Convert.ToInt32(midPoint)];
+
+            char middleChars1 = i[mp];
+            //char[] middleChars2 = { 'a', 'b' };
+            char[] middleChars2 = length % 2 == 0 ? new char[] { i[mp-1], i[mp] } : new char[] { i[mp] };
+            
+            Console.WriteLine(length % 2 == 0 ? new char[] { i[mp - 1], i[mp] } : new char[] { i[mp] });
 
             Console.WriteLine(middleChars);
         }

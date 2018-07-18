@@ -1,3 +1,48 @@
+Console.WriteLine(
+                    a[0].Count() % 2 == 0 ?
+                    a[0].Substring(Convert.ToInt32(a[0].Count()/2f)-1,2):
+                    a[0].Substring(Convert.ToInt32(Math.Floor(a[0].Count()/2f)),1)
+                );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 using System;
 using System.Linq;
 namespace CG
